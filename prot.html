@@ -1,14 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        header
+        {
+            background-color: gray;
+            height: 50px;
+            justify-content: center;
+        }
+        main {
+            background-color: moccasin;
+            height: 280px;
+            width: 74%;
+            flex-wrap: nowrap;
+        }
+        nav {
+            background-color: rgb(174, 255, 214);
+            height: 280px;
+            width: 25%;
+            flex-wrap: nowrap;
+        }
+        footer
+        {
+            background-color: gray;
+            height: 90px;
+        } 
+        .flexh {
+            background-color: rgb(252, 191, 137);
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-items: center
+        }
+        .flexp {
+            background-color: whitesmoke;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-items: center;
+            flex=flow: row-reverse wrap
+        }
+        .menu {
+            display: inline-block;
+
+        }
+    </style>
 </head>
 <body>
-    <header>
-        
-    </header>
+    <header>[Шапка страницы]</header>
+    <main class="menu">[Основная часть]
+        <div class="flexcontainer">
+            <p class="flexh">[Ещё 1]</p>
+            <p class="flexh">[Ещё 2]</p>
+            <p class="flexh">[Ещё 3]</p>
+        </div>
+    </main>
+    <nav class="menu">[Боковая область]</nav>
+    <footer>
+        <div class="flexcontainer">
+            <p class="flexp">[Секция футера 1]</p>
+            <p class="flexp">[Секция футера 2]</p>
+            <p class="flexp">[Секция футера 3]</p>
+            <p class="flexp">[Секция футера 4]</p>
+        </div>
+    </footer>
 </body>
 </html>
